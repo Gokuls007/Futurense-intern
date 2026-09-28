@@ -4,11 +4,11 @@ def minion_game(string):
     stuart = consonant(string)
     
     if kevin == stuart:
-        print('draw')
+        print('Draw')
     elif kevin < stuart:
-        print("Stuart win")
+        print("Stuart", stuart)
     else:
-        print("Kevin win")
+        print("Kevin", kevin)
     
     
 def vowel(string):
@@ -33,5 +33,5 @@ def consonant(string):
     
 
 if __name__ == '__main__':
-    s = input("Enter a word: ")
+    s = input("Enter a word: ").strip()
     minion_game(s)
